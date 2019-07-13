@@ -1,0 +1,12 @@
+{% extends  'base.html'%}
+{% load staticfiles %}
+
+{% block content %}
+<div class="post-text">
+	<div class="title">
+						<span>
+							{{ posts.name}}						</span>
+	</div>
+	{{ posts.text|safe }}
+</div>
+{% endblock %}
