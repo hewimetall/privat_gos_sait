@@ -26,4 +26,5 @@ urlpatterns = [
     path('art/',include('pattern_for.urls')),
     url(r'^markdownx/', include('markdownx.urls')),
     path('forma_obratnoj_svyazi/', include('forma_obratnoj_svyazi.urls')),
+    path('mag/', include('product_category.urls')),
 ]
