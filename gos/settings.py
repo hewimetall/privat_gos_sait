@@ -16,6 +16,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog',
     'pattern_for',
     'about_company',
     'forma_obratnoj_svyazi',
