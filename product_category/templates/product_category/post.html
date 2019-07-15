@@ -3,10 +3,44 @@
 
 {% block content %}
 <div class="post-text">
-	<div class="title">
-						<span>
-							{{ posts.name}}						</span>
+                  <div class="woocommerce">
+					  <div class="single-product" data-product-page-preselected-id="0">
+				<div class="woocommerce-notices-wrapper"></div><div id="product-1681" class="product type-product post-1681 status-publish first instock product_cat-atlas has-post-thumbnail shipping-taxable purchasable product-type-simple">
+
+	<div>
+		<img src=" {{ post.image }}">
+
 	</div>
-	{{ posts.text|safe }}
+	<div class="summary entry-summary">
+		<p class="price"><span class="woocommerce-Price-amount amount">
+			<span class="woocommerce-Price-currencySymbol">₽</span>{{ post.price }}</span></p>
+
+	<form class="cart" action="" method="post" enctype="multipart/form-data">
+		<button > buy</button>
+			</form>
+
+
+<div class="product_meta">
+
 </div>
+	</div>
+
+
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="description_tab active" id="tab-title-description" role="tab" aria-controls="tab-description">
+					<a href="#tab-description">Описание</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description" style="display: block;">
+
+  <h2>Описание</h2>
+
+{{ post.text|safe }}			</div>
+			</div>
+
+</div>
+
+			</div>
+			</div>                      </div>
 {% endblock %}

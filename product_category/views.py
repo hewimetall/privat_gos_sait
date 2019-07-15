@@ -17,10 +17,17 @@ class ArticleListView(ListView):
 
         return context
 
+
     def get_queryset(self):
-        return items_cat.objects.filter(slug=self.kwargs['slug'])
+        a=name_cat.objects.get(slug=self.kwargs['slug'])
+        return items_cat.objects.filter(categoy=a.name)
 
 
 def post_list(request):
     posts = name_cat.objects.all()
     return render(request, 'product_category/index.html', context={'name': request, 'post': posts})
+
+def article(request,slug,cat):
+    posts = items_cat.objects.get(slug=slug)
+    print(posts)
+    return render(request, 'product_category/post.html', context={'name': request, 'post': posts})

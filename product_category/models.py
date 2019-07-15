@@ -10,7 +10,7 @@ class name_cat(models.Model):
 
 
 class items_cat(models.Model):
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=30,primary_key=True)
     slug = models.SlugField()
     text =mk_models.MarkdownxField(max_length=1200)
     image=models.ImageField(upload_to='prod/catalog/',blank=True)

@@ -1,4 +1,5 @@
 <script async="" src="/static/pette_files/js.js"></script>
+
 	<link href="/static/pette_files/css.css" rel="stylesheet">
 
 <link href="/static/pette_files/css_002.css" rel="stylesheet" type="text/css">
@@ -25,6 +26,9 @@
 <link rel="stylesheet" id="style-mobile-css-css" href="/static/pette_files/style_mobile.css" type="text/css" media="all">
 
 <script type="text/javascript" src="/static/pette_files/jquery_002.js"></script>
+<script type="text/javascript" src="/static/pette_files/jquery-3.4.1.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+
 <script type="text/javascript" src="/static/pette_files/jquery-migrate.js"></script>
 <script type="text/javascript" src="/static/pette_files/owl.js"></script>
 
@@ -36,3 +40,14 @@
 <link rel="icon" href="/static/pette_files/cropped-logo-nodesc-col-rgb-1-1-192x192.png" sizes="192x192">
 <link rel="apple-touch-icon-precomposed" href="/static/pette_files/cropped-logo-nodesc-col-rgb-1-1-180x180.png">
 <meta name="msapplication-TileImage" content="/static/pette_files/cropped-logo-nodesc-col-rgb-1-1-270x270.png">
+
+
+    <script>
+        // wait for the DOM to be loaded
+        $(document).ready(function() {
+            // bind 'myForm' and provide a simple callback function
+            $('#myForm').ajaxForm(function() {
+                alert("Thank you for your comment!");
+            });
+        });
+    </script>
