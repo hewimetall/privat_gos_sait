@@ -11,6 +11,9 @@
     <title>Роскартография</title>
 	{% include  'static.html' %}
 
+    {% block js_content %}
+
+    {% endblock %}
 <link rel="dns-prefetch" href="http://s.w.org/">
 <link rel="alternate" type="application/rss+xml" title="Роскартография » Лента рубрики Новости" href="https://www.roscartography.ru/category/news/feed/">
 		<script type="text/javascript">
@@ -181,7 +184,7 @@ img.emoji {
 					<h4 style="margin: 5px 0px 0px 0px; text-align: right; font-weight: 400;visibility: hidden;"><a href="#" title="Русскоязычная версия сайта" style="text-decoration-color: #4f9d35;"><span style="color: #4f9d35;">RU</span></a> | <a href="#" title="Англоязычная версия сайта" style="text-decoration: none;"><span style="color: #00548a;">EN</span></a></h4>
 				</div>
 			</div>
-			<div class="kama_breadcrumbs" style="color: #00548a; font-weight: 400;">
+			<div class="kama_breadcrumbs" style="color: #00548a; font-weight: 400; visibility: hidden;">
 				<a style="color: #00548a; text-decoration: none; font-weight: 400;" href="/">Главная </a>
 				<span style="color: #00548a; font-weight: 400;"> / </span>
 				{% block bar %}

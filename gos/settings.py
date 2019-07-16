@@ -22,13 +22,13 @@ INSTALLED_APPS = [
     'forma_obratnoj_svyazi',
     'product_category',
     'markdownx',
+    'cart',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
 ]
 
 MIDDLEWARE = [
@@ -56,6 +56,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cart.context_processors.cart'
             ],
         },
     },
@@ -116,3 +117,4 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static','media')
 
 STATICFILES_DIRS =[ os.path.join(BASE_DIR, "static")]
+CART_SESSION_ID='corsin'

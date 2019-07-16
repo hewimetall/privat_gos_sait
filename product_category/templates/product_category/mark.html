@@ -13,8 +13,8 @@
 					<option value="price-desc">Цены: по убыванию</option>
 			</select>
 	</form>
-<ul class="products columns-4">
-	{{ object_list.count }}
+<ul class="products columns-4 ">
+
 	 {% for List_Market in object_list %}
 <li class="product type-product post-1681 status-publish first instock product_cat-atlas has-post-thumbnail shipping-taxable purchasable product-type-simple">
 	<a href="{{ request.path }}{{  List_Market.slug  }}/" class="woocommerce-LoopProduct-link woocommerce-loop-product__link">

@@ -28,5 +28,5 @@ urlpatterns = [
     path('forma_obratnoj_svyazi/', include('forma_obratnoj_svyazi.urls')),
     path('mag/', include('product_category.urls')),
     path('news/', include('blog.urls')),
-
+    path('cart/', include('cart.urls',namespace='cart')),
 ]

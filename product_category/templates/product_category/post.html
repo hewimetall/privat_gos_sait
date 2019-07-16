@@ -1,6 +1,37 @@
 {% extends  'base.html'%}
 {% load staticfiles %}
 
+{% block js_content %}
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+
+	<script type="text/javascript">
+$( document ).ready(function() {
+    $("#btn").click(
+		function(){
+			sendAjaxForm('result_form', 'cart', '/cart/add/{{post.slug }}/');
+			return false;
+		}
+	);
+});
+
+function sendAjaxForm(result_form, ajax_form, url) {
+    $.ajax({
+        url:     url, //url страницы (action_ajax_form.php)
+        type:     "POST", //метод отправки
+        dataType: "html", //формат данных
+        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
+        success: function(response) { //Данные отправлены успешно
+        	$('#btn').attr('value', 'delete');
+        	$('#btn').attr('id', 'dell');
+        },
+    	error: function(response) { // Данные не отправлены
+    		alert("lol");
+            $('#result_form').html('Ошибка. Данные не отправлены.');
+    	}
+ 	});
+}
+	</script>
+{% endblock %}
 {% block content %}
 <div class="post-text">
                   <div class="woocommerce">
@@ -15,10 +46,11 @@
 		<p class="price"><span class="woocommerce-Price-amount amount">
 			<span class="woocommerce-Price-currencySymbol">₽</span>{{ post.price }}</span></p>
 
-	<form class="cart" action="" method="post" enctype="multipart/form-data">
-		<button > buy</button>
-			</form>
-
+		<form action="" method="post" id="cart">
+			{% csrf_token %}
+			{{ cart.forms_market.as_p }}
+			    <input type="button" id="btn" class="single_add_to_cart_button button alt" value="Добавить товар" />
+		</form>
 
 <div class="product_meta">
 

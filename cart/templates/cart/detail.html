@@ -1,4 +1,3 @@
-{% extends "shop/base.html" %}
 {% block title %}
   Ваша корзина товаров
 {% endblock %}
@@ -21,12 +20,12 @@
           <tr>
             <td>
               <a href="{{ product.get_absolute_url }}">
-                <img src="{{ product.image.url }}" alt="" />
+                <img src="{{ product.image }}" alt="" />
               </a>
             </td>
             <td>{{ product.name }}</td>
             <td>{{ item.quantity }}</td>
-            <td><a href="{% url "cart:CartRemove" product.id %}">Удалить</a></td>
+            <td><a href="{% url "cart:CartRemove" product.slug %}">Удалить</a></td>
             <td class="num">{{ item.price }} руб.</td>
             <td class="num">{{ item.total_price }} руб.</td>
           </tr>
@@ -40,7 +39,7 @@
     </tbody>
   </table>
   <p class="text-right">
-    <a href="{% url "shop:ProductList"%}" class="btn">Продолжить Шопинг</a>
+    <a href="/" class="btn">Продолжить Шопинг</a>
     <a href="#">Оформить заказ</a>
   </p>
 {% endblock %}
