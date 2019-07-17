@@ -25,7 +25,7 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
         dataType: "html", //формат данных
         data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
         success: function(response) { //Данные отправлены успешно
-        $(id_t).attr('value',text);
+        $(id).attr('value',text);
             },
     	error: function(response) { // Данные не отправлены
     		alert("lol");

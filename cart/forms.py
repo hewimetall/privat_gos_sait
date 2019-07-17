@@ -13,5 +13,4 @@ class Cart_one_prod(forms.Form):
     for tenplate:
                 for{biz|gos}
     """
-    quantity = forms.IntegerField(initial=1,widget=forms.HiddenInput)
     update = forms.CharField(required=False, initial=False, widget=forms.HiddenInput)

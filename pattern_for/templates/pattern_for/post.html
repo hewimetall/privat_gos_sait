@@ -1,6 +1,60 @@
 {% extends  'base.html'%}
 {% load staticfiles %}
 
+{% block js_content %}
+<script type="text/javascript" src="/static/pette_files/jquery.form.js"></script>
+<style>
+#btn{
+	color: #ffffff;
+	background-color: #00548a;
+	font-size: 100%;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	overflow: visible;
+	padding: .618em 1em;
+	font-weight: 700;
+	border-radius: 3px;
+	left: auto;
+	border: 0;
+	display: inline-block;
+	background-image: none;
+	box-shadow: none;
+	text-shadow: none;
+}
+</style>
+	<script type="text/javascript">
+	var i=0;
+$( document ).ready(function() {
+	$("#btn").click(
+		function(){
+			sendAjaxForm('result_form', 'cart' , '/cart/add/{{posts.slug }}/');
+			return false;
+		}
+	);
+});
+
+function sendAjaxForm(result_form, ajax_form,url) {
+    i = ((++ i) & 1);
+    i?url='/cart/add/for/{{posts.slug }}/':url='/cart/remove/for/{{posts.slug }}/';
+    i?text='удалить':text='Добавить товар';
+    $.ajax({
+        url:     url, //url страницы (action_ajax_form.php)
+        type:     "POST", //метод отправки
+        dataType: "html", //формат данных
+        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
+        success: function(response) { //Данные отправлены успешно
+        $("#btn").attr('value',text);
+            },
+    	error: function(response) { // Данные не отправлены
+    		alert("Ошибка. Операция не отправлена");
+    	}
+ 	});
+};
+	</script>
+{% endblock %}
 {% block content %}
 <div class="post-text">
 	<div class="title">
@@ -8,5 +62,11 @@
 							{{ posts.name}}						</span>
 	</div>
 	{{ posts.text|safe }}
+
+		<form action="" method="post" id="cart">
+			{% csrf_token %}
+			{{ cart.Cart_one_prod.as_p }}
+			    <input type="button" id="btn" class="single_add_to_cart_button button alt" value="Добавить услугу" />
+		</form>
 </div>
 {% endblock %}

@@ -25,7 +25,6 @@
             </td>
             <td>{{ product.name }}</td>
             <td>{{ item.quantity }}</td>
-            <td><a href="{% url "cart:CartRemove" product.slug %}">Удалить</a></td>
             <td class="num">{{ item.price }} руб.</td>
             <td class="num">{{ item.total_price }} руб.</td>
           </tr>

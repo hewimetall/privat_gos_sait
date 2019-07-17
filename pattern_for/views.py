@@ -18,7 +18,6 @@ def post_titile(request,cat,slug):
         return render(request, 'pattern_for/post.html', {'posts': posts})
     return HttpResponse("404 not found")
 
-
 def post_list(request,reder):
     if (reder == 'for_gos' or reder =="for_biznes" or reder == 'for_you' ):
         posts = pattern_for.objects.filter(categoy =reder)

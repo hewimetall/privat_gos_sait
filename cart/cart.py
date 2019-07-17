@@ -1,6 +1,7 @@
 from decimal import Decimal
 from django.conf import settings
 from product_category.models import items_cat as Product
+from pattern_for.models import pattern_for as pattern_for
 from .forms import CartAddProductForm ,Cart_one_prod
 
 class Cart(object):
@@ -18,11 +19,12 @@ class Cart(object):
         self.cart = cart
 
     # Добавление товара в корзину пользователя или обновление количеста товара
-    def add(self, product, quantity=1, update_quantity=False):
+    def add(self, product, quantity=1, update_quantity=False,cat=None):
         product_id = str(product.slug)
         if product_id not in self.cart:
             self.cart[product_id] = {'quantity': 0,
-                                     'price': str(product.price)}
+                                     'price': str(product.price),
+                                     'cat':str(cat)}
         if update_quantity:
             self.cart[product_id]['quantity'] = quantity
         else:
@@ -52,7 +54,13 @@ class Cart(object):
     # Итерация по товарам
     def __iter__(self):
         product_ids = self.cart.keys()# cart is dict
-        products = Product.objects.filter(slug__in=product_ids)
+        products=None
+        if(self.cart['testvd-d']['cat']=='usl'):
+            products = pattern_for.objects.filter(slug__in=product_ids)
+            print (products)
+        elif(self.cart['testvd-d']['cat']=='shop'):
+            products += Product.objects.filter(slug__in=product_ids)
+            print (products)
         for product in products:
             self.cart[str(product.slug)]['product'] = product
         for item in self.cart.values():
