@@ -24,6 +24,8 @@ def CartRemove(request, product_id):
     cart = Cart(request)
     product = get_object_or_404(Product, slug=product_id)
     cart.remove(product)
+    if request.is_ajax():
+        return HttpResponse('OK')
     return redirect('cart:CartDetail')
 
 def CartDetail(request):
