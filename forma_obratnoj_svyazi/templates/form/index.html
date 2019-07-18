@@ -1,36 +1,84 @@
 {% extends  'base.html'%}
 {% load staticfiles %}
 
-
 {% block content %}
-      {% for item in cart %}
-        {% with product=item.product %}
-          <tr>
-            <td>{{ product.text}}</td>
-            </tr>
-        {% endwith %}
-      {% endfor %}
+
 
 <div class="post-text">
-<form action="" method="post">
-   <div class="forminator-row">
-	   <label class="forminator-label" for="id_name">{{ form.name.label_tag }}</label>
-		   <input type="text"  class="forminator-input"  name="name" maxlength="20" required="" id="id_name"></div>
-	<label class="forminator-label"  for="id_email">{{ form.email.label_tag }}</label>
-	<input type="email" name="email"  class="forminator-input" required="" id="id_email">
+    <form action="" method="post">
+        <div class="forminator-row">
+            <label class="forminator-label" for="id_name">{{ form.name.label_tag }}</label>
+            <input type="text" class="forminator-input" name="name" maxlength="20" required="" id="id_name"></div>
+        <label class="forminator-label" for="id_email">{{ form.email.label_tag }}</label>
+        <input type="email" name="email" class="forminator-input" required="" id="id_email">
 
 
-<div class="forminator-row">
-	<label class="forminator-label" for="id_phone">Your name:</label>
-	<input class="forminator-input"  type="text" name="phone" maxlength="11" required="" id="id_phone">
-</div>
-<div class="forminator-row"><label class="forminator-label" for="id_text">Your name:</label>
-	<textarea name="text" class="forminator-textarea" cols="40" rows="10" maxlength="200" required="" id="id_text"></textarea>
-</div>
-<button class="forminator-button forminator-input">Отправить сообщение</button>
-	{% csrf_token %}
-</form>
-</div>
+        <div class="forminator-row">
+            <label class="forminator-label" for="id_phone">{{ form.phone.label_tag }}</label>
+            <input class="forminator-input" type="text" name="phone" maxlength="11" required="" id="id_phone">
+        </div>
+        <div class="forminator-row"><label class="forminator-label" for="id_text">{{ form.text.label_tag }}</label>
+            <textarea name="text" class="forminator-textarea" cols="40" rows="10" maxlength="200" required=""
+                      id="id_text"></textarea>
+        </div>
+
+        <button class="forminator-button forminator-input">Отправить сообщение</button>
+        {% csrf_token %}
+    </form>
+<hr>
+        <div class="woocommerce">
+            <div class="woocommerce-notices-wrapper"></div>
+            <form class="woocommerce-cart-form" action="https://www.roscartography.ru/korzina-2/" method="post">
+
+                <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
+                    <thead>
+                    <tr>
+                        <th class="product-name">Товар</th>
+                        <th class="product-price">Цена</th>
+                        <th class="product-quantity">Количество</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+        {% for item in cart %}
+        {% with product=item.product %}
+        <tr class="woocommerce-cart-form__cart-item cart_item">
+<!--            <td class="product-remove">
+                <a href=""
+                   class="remove" aria-label="Удалить эту позицию" data-product_id="2807"
+                   data-product_sku="">×</a></td>-->
+
+            <td class="product-name" data-title="Товар">
+                <a href="{{ product.get_absolute_url }}">{{ product.name }}</a></td>
+
+            <td class="product-price" data-title="Цена">
+                            <span class="woocommerce-Price-amount amount"><span
+                                    class="woocommerce-Price-currencySymbol">₽</span>{{ product.price }}</span></td>
+
+            <td class="product-quantity" data-title="Количество">
+                <div class="quantity">
+                    <label class="screen-reader-text" for="quantity_5d30152e4a045">Количество Национальный
+                        атлас Арктики в коробе (кож)</label>
+                    <input type="number" id="quantity_5d30152e4a045" class="input-text qty text" step="1"
+                           min="0" max="3" name="cart[765d5fb115a9f6a3e0b23b80a5b2e4c4][qty]" value="1"
+                           title="Кол-во" size="4" inputmode="numeric">
+                </div>
+            </td>
+
+            <td class="product-subtotal" data-title="Итого">
+                            <span class="woocommerce-Price-amount amount"><span
+                                    class="woocommerce-Price-currencySymbol">₽</span>{{ item.total_price }}</span></td>
+        </tr>
+
+      {% endwith %}
+        {% endfor %}
+
+                    </tbody>
+                </table>
+            </form>
+
+        </div>
+    </div>
 
 {% endblock %}
 
@@ -38,12 +86,12 @@
 {% block test %}
 
 <div class="post-text">
-            <td>
-              <form action="" method="post">
-                {{form.as_p}}
-                <input type="submit" value="Update">
-                {% csrf_token %}
-              </form>
-		</td>
+    <td>
+        <form action="" method="post">
+            {{form.as_p}}
+            <input type="submit" value="Update">
+            {% csrf_token %}
+        </form>
+    </td>
 </div>
 {% endblock %}

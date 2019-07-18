@@ -55,14 +55,15 @@ class Cart(object):
     def __iter__(self):
         product_ids = self.cart.keys()# cart is dict
         products=None
-        if(self.cart['testvd-d']['cat']=='usl'):
-            products = pattern_for.objects.filter(slug__in=product_ids)
-            print (products)
-        elif(self.cart['testvd-d']['cat']=='shop'):
-            products += Product.objects.filter(slug__in=product_ids)
-            print (products)
-        for product in products:
-            self.cart[str(product.slug)]['product'] = product
+        for name in product_ids:
+            if(self.cart[str(name)]['cat']=='usl'):
+                products = pattern_for.objects.filter(slug__in=product_ids)
+                for product in products:
+                    self.cart[str(product.slug)]['product'] = product
+            elif(self.cart[str(name)]['cat']=='shop'):
+                products = Product.objects.filter(slug__in=product_ids)
+                for product in products:
+                    self.cart[str(product.slug)]['product'] = product
         for item in self.cart.values():
             item['price'] = Decimal(item['price'])
             item['total_price'] = item['price'] * item['quantity']
@@ -72,6 +73,15 @@ class Cart(object):
     # Количество товаров
     def __len__(self):
         return sum(item['quantity'] for item in self.cart.values())
+
+    # Количество элементов
+    def count(self):
+        i=0
+        for item in self.cart.values():
+            print(item)
+            i+=1
+        print(i)
+        return i
 
     def get_total_price(self):
         return sum(Decimal(item['price']) * item['quantity'] for item in self.cart.values())

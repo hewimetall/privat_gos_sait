@@ -23,3 +23,6 @@ class items_cat(models.Model):
 
     def __str__(self):
         return "{} {} ".format(self.name,self.categoy)
+
+    def get_absolute_url(self):
+        return "/mag/" + str(self.categoy)+ "/" + str(self.slug)+"/"
