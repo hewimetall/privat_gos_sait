@@ -1,4 +1,4 @@
-from django.shortcuts import render ,redirect
+from django.shortcuts import render ,redirect ,get_object_or_404
 from markdownx.utils import markdownify
 from .models import pattern_for
 from .models import categoy
@@ -12,15 +12,13 @@ def my_view(request):
 
 
 def post_titile(request,cat,slug):
-    if (cat=='for_gos' or cat =='for_biznes'):
-        posts = pattern_for.objects.get(slug=slug,categoy=cat)
-        posts.text=markdownify(posts.text)
-        return render(request, 'pattern_for/post.html', {'posts': posts})
-    return HttpResponse("404 not found")
+    obj=get_object_or_404(categoy,slug=cat)
+    posts = pattern_for.objects.get(slug=slug,categoy=obj)
+    posts.text=markdownify(posts.text)
+    return render(request, 'pattern_for/post.html', {'posts': posts})
 
 def post_list(request,reder):
-    if (reder == 'for_gos' or reder =="for_biznes" or reder == 'for_you' ):
-        posts = pattern_for.objects.filter(categoy =reder)
-        return render(request,'pattern_for/index.html',context={'name':request,'post':posts})
-    return HttpResponse("404 not found")
+    obj=get_object_or_404(categoy,slug=reder)
+    posts = pattern_for.objects.filter(categoy =obj)
+    return render(request,'pattern_for/index.html',context={'name':request,'post':posts})
 

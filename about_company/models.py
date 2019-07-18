@@ -1,4 +1,5 @@
 from django.db import models
+from markdownx.models import MarkdownxField
 
 # Create your models here.
 from django.db import models
@@ -20,11 +21,11 @@ class item_block(models.Model):
 
 class list_menu(models.Model):
     title = models.CharField(max_length=40)
-    image = models.ImageField(max_length=40,upload_to='about_company/')
+    content = MarkdownxField(max_length=1200,blank=True)
+    image = models.ImageField(max_length=40,upload_to='about_company/other_page/',blank=True)
     url = models.SlugField()
+    date=models.DateTimeField(auto_now_add=True)
 
-    def get_image(self):
-        return  str( 'about_company/'+self.image+".png")
-class car_news(models.Model):
-    # file will be uploaded to MEDIA_ROOT/uploads
-    upload = models.FileField(upload_to='about_company/')
+    class Meta:
+        verbose_name="Страница находящяяся на главном странице"
+        verbose_name_plural="Страницы на главной странице с имформацией о компании"

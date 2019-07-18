@@ -11,18 +11,16 @@ SECRET_KEY = '1wu@n!5mo9m!dtzr&wj#!6z=)5^4^#d*5d^c+mfyyop=(ki-#c'
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
-
 # Application definition
 
 INSTALLED_APPS = [
-    'blog',
-    'pattern_for',
-    'about_company',
-    'forma_obratnoj_svyazi',
-    'product_category',
+    'blog.apps.BlogConfig',
+    'pattern_for.apps.PatternForConfig',
+    'about_company.apps.AboutCompanyConfig',
+    'forma_obratnoj_svyazi.apps.FormaObratnojSvyaziConfig',
+    'product_category.apps.ProductCategoryConfig',
+    'cart.apps.CartConfig',
     'markdownx',
-    'cart',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -98,7 +96,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'ru-RU'
 
 TIME_ZONE = 'UTC'
 

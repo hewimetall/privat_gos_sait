@@ -7,5 +7,6 @@ class Contact_bd(models.Model):
     phone = models.CharField(max_length=11,null=True)
     text  = models.TextField(max_length=200,blank=True)
     date  = models.DateTimeField(auto_now=True)
-    class __Meta__:
-        order_by=['date']
+    class Meta:
+        verbose_name="Таблица со списком обратной формы"
+        verbose_name_plural="Таблица со списком запросов из  обратной формы"
