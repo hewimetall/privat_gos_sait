@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0c7ff3c0-586a-43b3-b89b-4b1ccb3c32dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/about_company/customClass.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_company/templates/about_company/base_template.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_company/templates/about_company/post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_company/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about_company/templatetags/test_teg.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/privat_gos_sait.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/privat_gos_sait.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/about_company/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/about_company/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/block-img.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/block_slider.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/glob_meny.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/about_company/templates/about_company/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/other_page/history_company.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/other_page/nasha-missiya.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/templates/about_company/test_glob.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/about_company/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about_company/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/about_company/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/form.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/templates/form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/templates/form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pattern_for/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pattern_for/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_category/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_category/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_category/templates/product_category/mark.html" beforeDir="false" afterPath="$PROJECT_DIR$/product_category/templates/product_category/mark.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,47 +27,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/about_company/models.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="45" column="25" selection-start-line="45" selection-start-column="25" selection-end-line="45" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog/models.py">
+        <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="25" column="59" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="59" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_company/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_company/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="15" />
+            <state relative-caret-position="103">
+              <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -79,40 +49,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_company/templates/about_company/post.html">
+        <entry file="file://$PROJECT_DIR$/cart/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="7" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_company/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#1#33#0" expanded="true" />
+                <element signature="e#0#64#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_company/templates/about_company/index.html">
+        <entry file="file://$PROJECT_DIR$/cart/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-end-line="2" />
+            <state relative-caret-position="150">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/about_company/templates/about_company/base_template.html">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="195">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -171,12 +135,10 @@
         <option value="$PROJECT_DIR$/template/static.html" />
         <option value="$PROJECT_DIR$/static/pette_files/add_items.js" />
         <option value="$PROJECT_DIR$/cart/forms.py" />
-        <option value="$PROJECT_DIR$/cart/urls.py" />
         <option value="$PROJECT_DIR$/product_category/templates/product_category/post.html" />
         <option value="$PROJECT_DIR$/pattern_for/templates/pattern_for/post.html" />
         <option value="$PROJECT_DIR$/forma_obratnoj_svyazi/templates/form/index.html" />
         <option value="$PROJECT_DIR$/cart/templates/cart/detail.html" />
-        <option value="$PROJECT_DIR$/cart/views.py" />
         <option value="$PROJECT_DIR$/cart/cart.py" />
         <option value="$PROJECT_DIR$/blog/views.py" />
         <option value="$PROJECT_DIR$/blog/templates/blog/blog.html" />
@@ -186,8 +148,6 @@
         <option value="$PROJECT_DIR$/product_category/apps.py" />
         <option value="$PROJECT_DIR$/forma_obratnoj_svyazi/apps.py" />
         <option value="$PROJECT_DIR$/cart/apps.py" />
-        <option value="$PROJECT_DIR$/forma_obratnoj_svyazi/models.py" />
-        <option value="$PROJECT_DIR$/product_category/models.py" />
         <option value="$PROJECT_DIR$/pattern_for/models.py" />
         <option value="$PROJECT_DIR$/pattern_for/views.py" />
         <option value="$PROJECT_DIR$/about_company/templates/about_company/base_template.html" />
@@ -203,6 +163,12 @@
         <option value="$PROJECT_DIR$/about_company/views.py" />
         <option value="$PROJECT_DIR$/about_company/urls.py" />
         <option value="$PROJECT_DIR$/about_company/models.py" />
+        <option value="$PROJECT_DIR$/product_category/models.py" />
+        <option value="$PROJECT_DIR$/cart/views.py" />
+        <option value="$PROJECT_DIR$/cart/urls.py" />
+        <option value="$PROJECT_DIR$/forma_obratnoj_svyazi/views.py" />
+        <option value="$PROJECT_DIR$/forma_obratnoj_svyazi/form.py" />
+        <option value="$PROJECT_DIR$/forma_obratnoj_svyazi/models.py" />
       </list>
     </option>
   </component>
@@ -227,17 +193,12 @@
             <path>
               <item name="privat_gos_sait" type="b2602c69:ProjectViewProjectNode" />
               <item name="privat_gos_sait" type="462c0819:PsiDirectoryNode" />
-              <item name="about_company" type="462c0819:PsiDirectoryNode" />
+              <item name="forma_obratnoj_svyazi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="privat_gos_sait" type="b2602c69:ProjectViewProjectNode" />
               <item name="privat_gos_sait" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="privat_gos_sait" type="b2602c69:ProjectViewProjectNode" />
-              <item name="privat_gos_sait" type="462c0819:PsiDirectoryNode" />
-              <item name="cart" type="462c0819:PsiDirectoryNode" />
+              <item name="product_category" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -339,7 +300,21 @@
       <option name="project" value="LOCAL" />
       <updated>1563454787771</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="final 1.01">
+      <created>1563620042531</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1563620042531</updated>
+    </task>
+    <task id="LOCAL-00010" summary="final 1.01">
+      <created>1563620071741</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1563620071741</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -353,8 +328,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="1376" height="746" extended-state="6" />
-    <editor active="true" />
     <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3290735" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290735" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49888477" weight="0.29872206" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3290735" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50111526" side_tool="true" weight="0.29872206" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290735" />
+      <window_info anchor="bottom" id="Dart Analysis" order="11" weight="0.3290735" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981412" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -373,7 +367,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -422,60 +416,10 @@
     <MESSAGE value="work&#10;cat create category usl and chop" />
     <MESSAGE value="create paginator on views" />
     <MESSAGE value="final &#10;*this problem -&gt;(/)" />
-    <option name="LAST_COMMIT_MESSAGE" value="final &#10;*this problem -&gt;(/)" />
+    <MESSAGE value="final 1.01" />
+    <option name="LAST_COMMIT_MESSAGE" value="final 1.01" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/gos/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-          <folding>
-            <element signature="e#627#659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/templates/form/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="50" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cart/templates/cart/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/templates/blog/blog.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -567,16 +511,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="24" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/product_category/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,25 +705,8 @@
     <entry file="file://$PROJECT_DIR$/cart/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mod_news/models.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="59" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/about_company/admin.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -808,6 +725,89 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/product_category/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/cart.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="54" column="16" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/forma_obratnoj_svyazi/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>

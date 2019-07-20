@@ -13,7 +13,7 @@ class name_cat(models.Model):
         verbose_name_plural="Имя категорий"
 
     def __str__(self):
-        return "{} {} ".format(self.name,self.categoy)
+        return "{}  ".format(self.name)
 
 class items_cat(models.Model):
     name = models.CharField(max_length=30,primary_key=True)
@@ -32,3 +32,6 @@ class items_cat(models.Model):
 
     def __str__(self):
         return "{} {} ".format(self.name,self.categoy)
+
+    def get_absolute_url(self):
+        return "/mag/" + str(self.categoy)+ "/" + str(self.slug)+"/"

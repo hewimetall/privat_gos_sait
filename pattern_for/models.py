@@ -32,3 +32,6 @@ class pattern_for(models.Model):
 
     def __str__(self):
         return "{} {} ".format(self.name,self.categoy)
+
+    def get_absolute_url(self):
+        return "/art/" + str(self.categoy)+ "/" + str(self.slug)+"/"

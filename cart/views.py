@@ -7,7 +7,6 @@ from .cart import Cart
 from .forms import CartAddProductForm ,Cart_one_prod
 
 
-@require_POST
 def CartAdd(request, product_id):
     cart = Cart(request)
     product = get_object_or_404(Product, slug=product_id)
@@ -32,6 +31,7 @@ def CartRemove(request, product_id):
 
 @require_POST
 def CartAdd_for(request, product_id):
+    return HttpResponse('OK')
     cart = Cart(request)
     product =  get_object_or_404(pattern_for, slug=product_id)
     form = Cart_one_prod(request.POST)
