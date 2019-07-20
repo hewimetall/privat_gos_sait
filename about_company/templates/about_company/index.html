@@ -1,6 +1,7 @@
-{% extends  'base.html'%}
-{% block content %}
-<div class="content">
+{% extends  'about_company/base_template.html'%}
+{% block baner %}
+{% load test_teg %}
+
     <div class="block-img">
         <div class="item1">
             <p>В 2018 году АО "Роскартография"<br>выполнено воздушное лазерное сканирование<br>Казани, Набережных
@@ -26,72 +27,29 @@
             <p>Воздушное лазерное сканирование<br>Казани и других городов Татарстана</p>
         </div>
     </div>
+
+{% endblock %}
+
+    {% block list_others_page %}
     <div class="block-src">
+        {% with items=object_list %}
         <div class="child">
-            <a href="/category/news/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Novosti.png">
-                    <p>Новости</p>
+        {% for  item in items %}
+                {% if forloop.counter|modF:"4" %}
+                    </div>
+                    <div class="child">
+                {% endif %}
+                    <a href="{{ item.get_url }}">
+                        <div class="items">
+                            <img src="{{ item.url }}">
+                            <p>{{ item.title }}</p>
+                        </div>
+                    </a>
+
+            {% endfor %}
                 </div>
-            </a>
-            <a href="/o-kompanii/istoriya-kompanii/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Istoriya_kompanii.png">
-                    <p>История<br>компании</p>
-                </div>
-            </a>
-            <a href="/o-kompanii/nasha-missiya/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Missiya_i_celi.png">
-                    <p>Миссия<br>и цели</p>
-                </div>
-            </a>
-            <a href="/o-kompanii/struktura-kompanii/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Struktura.png">
-                    <p>Структура<br>компании</p>
-                </div>
-            </a>
-            <a href="/o-kompanii/liczenzii-dokumenty/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Licenzii.png">
-                    <p>Лицензии,<br>документы</p>
-                </div>
-            </a>
-        </div>
-        <div class="child">
-            <a href="/o-kompanii/sotrudnichestvo/">
-                <div class="items">
-                    <img src="/wp-content/uploads/2019/07/Sotrudnichestvo.png">
-                    <p>Сотрудничество</p>
-                </div>
-            </a>
-            <a href="/category/projects/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Proekty.png">
-                    <p>Проекты</p>
-                </div>
-            </a>
-            <a href="/o-kompanii/informaczionnye-materialy/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Informacionnye_materialy.png">
-                    <p>Информационные<br>материалы</p>
-                </div>
-            </a>
-            <a href="/o-kompanii/obuchenie-i-razvitie/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Vakansii.png">
-                    <p>Обучение и развитие</p>
-                </div>
-            </a>
-            <a href="/o-kompanii/kontakty/">
-                <div class="items">
-                    <img src="/wp-content/themes/THroscart/images/page_about_company/Kontakty.png">
-                    <p>Контакты</p>
-                </div>
-            </a>
-        </div>
+
+        {% endwith %}
     </div>
-</div>
     {% endblock %}
 

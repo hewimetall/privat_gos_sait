@@ -37,9 +37,9 @@ class Post(models.Model):
         return self.title
 
     #
-    # GENDER_CHOICES = (
+    # GENDER_CHOICES = [
     #     (MAN, 'Мужской'),
     #     (FEMALE, 'Женский'),
-    # )
+    # ]
     # gender = models.CharField(max_length=1, choices=GENDER_CHOICES, default=MAN, verbose_name="Пол",)
     #

@@ -1,12 +1,20 @@
 from django.shortcuts import render
+from django.shortcuts import get_object_or_404 ,redirect
 from markdown import markdown
 from .models import about_company,item_block,list_menu
 from django.http import HttpResponse
 from django.views.generic import ListView
+from django.views.generic.detail import SingleObjectMixin
+
+
+def my_rederect(request):
+    return redirect("/news/")
+from itertools import chain
 # Create your views here.
-class My_details_views(ListView):
+class My_list_views(ListView):
     model=list_menu
     template_name="about_company/index.html"
+
 
     def content_render(request):
         response = HttpResponse()
@@ -20,3 +28,10 @@ class My_details_views(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         return context
+
+
+def DetailView(request,slug):
+    model=list_menu
+    template_name="about_company/post.html"
+    my_object = get_object_or_404(model, slug=slug)
+    return render(request,template_name,context=({'post':my_object}))
