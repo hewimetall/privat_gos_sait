@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0c7ff3c0-586a-43b3-b89b-4b1ccb3c32dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/privat_gos_sait.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/privat_gos_sait.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/templates/form/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/templates/form/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forma_obratnoj_svyazi/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/forma_obratnoj_svyazi/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pattern_for/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pattern_for/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_category/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_category/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_category/templates/product_category/mark.html" beforeDir="false" afterPath="$PROJECT_DIR$/product_category/templates/product_category/mark.html" afterDir="false" />
-    </list>
+    <list default="true" id="0c7ff3c0-586a-43b3-b89b-4b1ccb3c32dd" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +101,32 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -340,8 +349,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3290735" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49888477" weight="0.29872206" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3290735" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50111526" side_tool="true" weight="0.29872206" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49888477" visible="true" weight="0.3290735" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50111526" side_tool="true" weight="0.3290735" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3290735" />
       <window_info anchor="bottom" id="Dart Analysis" order="11" weight="0.3290735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
