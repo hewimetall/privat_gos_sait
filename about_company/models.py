@@ -7,7 +7,7 @@ from django.db import models
 # Create your models here.
 
 def choices_dir_file():
-    directory = '/home/x/Documents/django/PycharmProjects/git_branch/privat_gos_sait/static/media/about_company/list_others_pages'
+    directory = '/home/x/PycharmProjects/git_branche/privat_gos_sait/static/media/about_company/list_others_pages'
     dict={("def","noimage.png")}
     for i in listdir(directory):
         dict.add((str(i)+"about_company/list_others_pages",str(i)))
