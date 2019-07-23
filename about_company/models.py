@@ -7,10 +7,10 @@ from django.db import models
 # Create your models here.
 
 def choices_dir_file():
-    directory = '/home/x/PycharmProjects/git_branche/privat_gos_sait/static/media/about_company/list_others_pages'
+    directory = '/sait/privat_gos_sait/media/about_company/list_others_pages'
     dict={("def","noimage.png")}
     for i in listdir(directory):
-        dict.add((str(i)+"about_company/list_others_pages",str(i)))
+        dict.add(("media/about_company/list_others_pages/"+str(i),str(i)))
     return tuple(dict)
 
 class about_company(models.Model):

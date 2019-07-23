@@ -23,7 +23,7 @@ class pattern_for(models.Model):
         ("for_gos","для государства")
     )
     categoy=models.CharField(choices=categor_choise,default=categor_choise[0],max_length=30)
-    image=models.ImageField(upload_to='prod/',blank=True)
+    image=models.ImageField(upload_to='pattern',blank=True)
     price=models.DecimalField(max_digits=10,decimal_places=2)
     date=models.DateTimeField(auto_now_add=True)
 
@@ -32,7 +32,8 @@ class pattern_for(models.Model):
         verbose_name_plural="Записи в категориях"
 
     def get_image(self):
-        return  str( 'for_gos/'+self.image+".png")
+        a= 'media/'+str(self.image)+".png"
+        return a
 
     def __str__(self):
         return "{} {} ".format(self.name,self.categoy)

@@ -10,7 +10,7 @@ SECRET_KEY = '1wu@n!5mo9m!dtzr&wj#!6z=)5^4^#d*5d^c+mfyyop=(ki-#c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
@@ -112,7 +112,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'static','media')
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 STATICFILES_DIRS =[ os.path.join(BASE_DIR, "static")]
 CART_SESSION_ID='corsin'

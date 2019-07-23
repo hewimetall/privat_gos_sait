@@ -8,7 +8,7 @@ from markdownx.utils import markdownify
 class BlogListView(ListView):
     model = Post
     template_name = 'blog/blog.html'
-    paginate_by = 1
+    paginate_by = 10
 
 class BlogDetailView(DetailView):
     model = Post
