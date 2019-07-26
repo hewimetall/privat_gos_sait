@@ -1,13 +1,13 @@
 from django.db import models
 from markdownx.models import MarkdownxField
-from os import listdir
+from os import listdir,getcwd
 # Create your models here.
 from django.db import models
 
 # Create your models here.
 
 def choices_dir_file():
-    directory = '/sait/privat_gos_sait/media/about_company/list_others_pages'
+    directory = '{}/media/about_company/list_others_pages'.format(getcwd())
     dict={("def","noimage.png")}
     for i in listdir(directory):
         dict.add(("media/about_company/list_others_pages/"+str(i),str(i)))
