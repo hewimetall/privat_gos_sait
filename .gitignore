@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 /.idea
+*/migrations/
 /__*
 # C extensions
 *.so
@@ -32,7 +33,7 @@ MANIFEST
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
-
+!*/migrations/__init__.py
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
