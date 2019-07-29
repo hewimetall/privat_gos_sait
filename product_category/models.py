@@ -1,6 +1,5 @@
 from django.db import models
-from markdownx import models as mk_models
-
+from mdeditor.fields import MDTextField
 # Create your models here.
 
 class name_cat(models.Model):
@@ -18,7 +17,7 @@ class name_cat(models.Model):
 class items_cat(models.Model):
     name = models.CharField(max_length=30,primary_key=True)
     slug = models.SlugField()
-    text =mk_models.MarkdownxField(max_length=1200)
+    text =MDTextField()
     image=models.ImageField(upload_to='prod/catalog/',blank=True)
     price=models.DecimalField(max_digits=10,decimal_places=2)
     categoy=models.ForeignKey(name_cat,on_delete=models.CASCADE)

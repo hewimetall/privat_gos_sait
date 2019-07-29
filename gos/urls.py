@@ -22,11 +22,14 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('users/', admin.site.urls),
-    path('',include('about_company.urls')),
+    path('',include('about_company.urls'),name="root"),
     path('art/',include('pattern_for.urls')),
     url(r'^markdownx/', include('markdownx.urls')),
     path('forma_obratnoj_svyazi/', include('forma_obratnoj_svyazi.urls')),
     path('mag/', include('product_category.urls')),
     path('news/', include('blog.urls')),
     path('cart/', include('cart.urls',namespace='cart')),
-]
+   path('admin_tools/', include('admin_tools.urls')),
+    path('mdeditor/',include('mdeditor.urls')),
+
+   ]

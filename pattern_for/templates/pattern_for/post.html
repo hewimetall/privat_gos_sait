@@ -57,9 +57,12 @@ function sendAjaxForm(result_form, ajax_form,url) {
 {% endblock %}
 {% block content %}
 <div class="post-text">
-	<div class="title">
+	<div style="margin: 5px 0px 35px 0px">		
+					<img scr="post.image_priview.url">
+<div class="title">
 						<span>
 							{{ posts.name}}						</span>
+	</div>
 	</div>
 	{{ posts.text|safe }}
 

@@ -1525,6 +1525,12 @@ a:hover {
 /******************************* Online store start *******************************/
 
 /* Page start */
+.products{
+	display:flex;
+	aling-items:stretch;
+
+
+}
 
 .woocommerce ul.products li.product a img {
 	width: 100%;
