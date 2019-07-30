@@ -72,6 +72,22 @@
 
       {% endwith %}
         {% endfor %}
+                                <tr class="woocommerce-cart-form__cart-item cart_item">
+
+            <td class="product-name" data-title="Товар">
+                <a href="{{ cat.get_absolute_url }}">{{ cat.name }}</a></td>
+
+            <td class="product-price" data-title="Цена">
+                            <span class="woocommerce-Price-amount amount"><span
+                                    class="woocommerce-Price-currencySymbol">₽</span>Договорная</span></td>
+
+            <td class="product-quantity" data-title="Количество">
+                </td>
+
+            <td class="product-subtotal" data-title="Итого">
+                            <span class="woocommerce-Price-amount amount"><span
+                                    class="woocommerce-Price-currencySymbol">₽</span></span></td>
+        </tr>
 
                     </tbody>
                 </table>
