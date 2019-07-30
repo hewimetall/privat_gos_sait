@@ -5,6 +5,7 @@
 <script type="text/javascript" src="/static/pette_files/jquery.form.js"></script>
 
 	<script type="text/javascript">
+		
 	var i=0;
 $( document ).ready(function() {
 	$("#btn").click(
@@ -26,8 +27,7 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
         data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
         success: function(response) { //Данные отправлены успешно
         $(id).attr('value',text);
-		    		alert("Товар добавлен перейти в корзину 
-				      <a href="http://192.38.0.23/forma_obratnoj_svyazi/">корзина</a>");
+	confirm("Вы - администратор?")?alert("test"):alert("no");
             },
     	error: function(response) { // Данные не отправлены
     		alert("lol");
