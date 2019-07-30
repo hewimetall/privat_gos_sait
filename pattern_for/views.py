@@ -17,7 +17,7 @@ def post_titile(request,cat,slug):
 
     posts= get_object_or_404(pattern_for, categoy=cat, slug=slug )
     posts.text=markdownify(posts.text)
-    return render(request, 'pattern_for/post.html', {'posts': posts})
+    return render(request, 'pattern_for/post.html', {'posts': posts,'cat':cat})
 
 def post_list(request,reder):
     # This code for old base via categoy model

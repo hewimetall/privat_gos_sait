@@ -25,40 +25,10 @@
 	text-shadow: none;
 }
 </style>
-	<script type="text/javascript">
-	var i=0;
-$( document ).ready(function() {
-	$("#btn").click(
-		function(){
-			sendAjaxForm('result_form', 'cart' , '/cart/add/{{posts.slug }}/');
-			return false;
-		}
-	);
-});
-
-function sendAjaxForm(result_form, ajax_form,url) {
-    i = ((++ i) & 1);
-    i?url='/cart/add/for/{{posts.slug }}/':url='/cart/remove/for/{{posts.slug }}/';
-    i?text='удалить':text='Добавить товар';
-    $.ajax({
-        url:     url, //url страницы (action_ajax_form.php)
-        type:     "POST", //метод отправки
-        dataType: "html", //формат данных
-        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
-        success: function(response) { //Данные отправлены успешно
-        $("#btn").attr('value',text);
-            },
-    	error: function(response) { // Данные не отправлены
-    		alert("Ошибка. Операция не отправлена");
-    	}
- 	});
-};
-	</script>
 {% endblock %}
 {% block content %}
 <div class="post-text">
 	<div style="margin: 5px 0px 35px 0px">		
-					<img scr="post.image_priview.url">
 <div class="title">
 						<span>
 							{{ posts.name}}						</span>
@@ -66,10 +36,10 @@ function sendAjaxForm(result_form, ajax_form,url) {
 	</div>
 	{{ posts.text|safe }}
 
-		<form action="" method="post" id="cart">
+		<form action="/forma_obratnoj_svyazi/?name={{ posts.slug }}&cat={{ cat }}" method="post" id="cart">
 			{% csrf_token %}
 			{{ cart.Cart_one_prod.as_p }}
-			    <input type="button" id="btn" class="single_add_to_cart_button button alt" value="Добавить услугу" />
+			    <input type="submit" id="btn" class="single_add_to_cart_button button alt" value="Добавить услугу" />
 		</form>
 </div>
 {% endblock %}

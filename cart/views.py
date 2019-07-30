@@ -17,8 +17,7 @@ def CartAdd(request, product_id):
                                   update_quantity=cd['update'],cat="shop")
     if request.is_ajax():
         return HttpResponse('OK')
-
-    return redirect('cart:CartDetail')
+    return redirect('/forma_obratnoj_svyazi')
 
 def CartRemove(request, product_id):
     cart = Cart(request)
@@ -29,22 +28,29 @@ def CartRemove(request, product_id):
     return redirect('cart:CartDetail')
 
 
-@require_POST
-def CartAdd_for(request, product_id):
-    return HttpResponse('OK')
+def CartAdd_for(request,cat, product_id):
     cart = Cart(request)
-    product =  get_object_or_404(pattern_for, slug=product_id)
-    form = Cart_one_prod(request.POST)
+    product =  get_object_or_404(pattern_for,categoy=cat, slug=product_id)
+    form = CartAddProductForm(request.POST)
     if form.is_valid():
         cd = form.cleaned_data
-        cart.add(product=product, quantity=1,
-                                  update_quantity=cd['update'],
-                    cat="usl")
-    if request.is_ajax():
-        return HttpResponse('OK')
+        cart.add(product=product,
+                quantity=cd['quantity'],
+                update_quantity=cd['update'],
+                cat="usl")
+        return render(request, 'cart/detail.html',
+                 {'cart': cart})
 
+@require_POST
+def CartAdd_for_t(request, product_id):
+    cart = Cart(request)
+    product = get_object_or_404(pattern_for, id=product_id)
+    form = CartAddProductForm(request.POST)
+    if form.is_valid():
+        cd = form.cleaned_data
+        cart.add(product=product, quantity=cd['quantity'],
+                                  update_quantity=cd['update'])
     return redirect('cart:CartDetail')
-
 
 def CartRemove_for(request, product_id):
     cart = Cart(request)

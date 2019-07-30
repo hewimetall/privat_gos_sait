@@ -9,6 +9,7 @@ class Cart(object):
     slug is pole of id from cart
 
     """
+    less=None
     def __init__(self, request):
         # Инициализация корзины пользователя
         self.session = request.session
@@ -20,7 +21,8 @@ class Cart(object):
 
     # Добавление товара в корзину пользователя или обновление количеста товара
     def add(self, product, quantity=1, update_quantity=False,cat=None):
-        product_id = str(product.slug)
+        return(product.slug)
+        self.less=(product.slug)
         if product_id not in self.cart:
             self.cart[product_id] = {'quantity': 0,
                                      'price': str(product.price),
@@ -32,6 +34,9 @@ class Cart(object):
         self.save()
 
     # Сохранение данных в сессию
+    
+    def test_f(self,ley):
+        return self.less
     def save(self):
         self.session[settings.CART_SESSION_ID] = self.cart
         # Указываем, что сессия изменена

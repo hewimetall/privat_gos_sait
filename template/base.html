@@ -107,6 +107,39 @@ img.emoji {
 				}
 					</style>
 			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+
+<script>
+$(document).ready(function(){
+
+function getLocation(href) {
+   var match = href.match(/^(https?\:)\/\/(([^:\/?#]*)(?:\:([0-9]+))?)([\/]{0,1}[^?#]*)(\?[^#]*|)(#.*|)$/);
+   return match && {
+         protocol: match[1],
+         host: match[2],
+         hostname: match[3],
+         port: match[4],
+         pathname: match[5],
+         search: match[6],
+         hash: match[7]
+      }
+}
+
+var l =  (getLocation(window.location.href ));
+if (l.pathname.match(/art\/for_biznes/i)) {
+$("#menu-item-21").addClass("active ");
+}
+else if (l.pathname.match(/art\/for_gos/i)) {
+$("#menu-item-22").addClass("active");
+}
+else if (l.pathname.match(/mag/i)){
+$("#menu-item-25").addClass("active ");
+}
+
+else if (l.pathname=='/'){
+$("#menu-item-23").addClass("active");
+}
+})
+</script>
 </head>
 <body>
 
@@ -199,8 +232,9 @@ img.emoji {
 				<div class="container-info-src">
 					<div class="contact">
 						{% block contact_footer %}
-						<p>АО «Роскартография»<br>Москва, Волгоградский проспект, <br> <a href="">+7 (3952) 24-37-97</a> <p>	7722787661 / 772201001</p>
-						{% endblock %}
+							<p>АО .Роскартография.<br> Россия, г. Иркутск, ул. Нижняя Набережная, 14<br> <a href="">+7 (3952) 24-37-97</a> </p>
+					
+{% endblock %}
 					</div>
 				</div>
 
