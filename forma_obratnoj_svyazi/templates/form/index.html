@@ -7,7 +7,7 @@
 	var i=0;
 $( document ).ready(function() {
     
-$( "a" ).click(function() {   
+$( ".remove" ).click(function() {   
     			sendAjaxForm('result_form', 'cart' ,$( this ).attr('hreflang') ,$( this ).attr('href'));
   alert($( this ).attr('href'));
     			return false;
@@ -89,9 +89,9 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
                             <span class="woocommerce-Price-amount amount"><span
                                     class="woocommerce-Price-currencySymbol">₽</span>{{ item.total_price }}</span></td>
 	           <td class="product-remove">
-                <a href="/cart/remove/{{product.slug}}/"
+                <p href="/cart/remove/{{product.slug}}/"
                    class="remove " aria-label="Удалить эту позицию" hreflang="{{product.slug}}"
-                 >×</a></td>
+                 >×</p></td>
 
 
         </tr>
