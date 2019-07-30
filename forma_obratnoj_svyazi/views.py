@@ -49,4 +49,4 @@ def contact(request):
     
 
     form=ContactForm()
-    return render(request,'form/index.html',context={'name':request,'form':form})
+    return render(request,'form/index.html',context={'name':request,'form':form,'cat':a})
