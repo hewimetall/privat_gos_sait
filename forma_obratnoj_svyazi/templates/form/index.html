@@ -72,6 +72,7 @@
 
       {% endwith %}
         {% endfor %}
+                        {% if cat %}
                                 <tr class="woocommerce-cart-form__cart-item cart_item">
 
             <td class="product-name" data-title="Товар">
@@ -88,7 +89,7 @@
                             <span class="woocommerce-Price-amount amount"><span
                                     class="woocommerce-Price-currencySymbol"></span></span></td>
         </tr>
-
+    {% endif %}
                     </tbody>
                 </table>
             </form>
