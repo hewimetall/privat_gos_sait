@@ -61,6 +61,8 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
                         <th class="product-name">Товар</th>
                         <th class="product-price">Цена</th>
                         <th class="product-quantity">Количество</th>
+			<th class="product-quantity">Удалить</th>
+
                     </tr>
                     </thead>
                     <tbody>
@@ -68,11 +70,6 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
         {% for item in cart %}
         {% with product=item.product %}
         <tr class="woocommerce-cart-form__cart-item cart_item {{product.slug}} ">
-           <td class="product-remove">
-                <a href="/cart/remove/{{product.slug}}/"
-                   class="remove " aria-label="Удалить эту позицию" hreflang="{{product.slug}}"
-                 >×</a></td>
-
             <td class="product-name" data-title="Товар">
                 <a href="{{ product.get_absolute_url }}">{{ product.name }}</a></td>
 
@@ -82,10 +79,8 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
 
             <td class="product-quantity" data-title="Количество">
                 <div class="quantity">
-                    <label class="screen-reader-text" for="quantity_5d30152e4a045">Количество Национальный
-                        атлас Арктики в коробе (кож)</label>
-                    <input type="number" id="quantity_5d30152e4a045" class="input-text qty text" step="1"
-                           min="0" max="3" name="cart[765d5fb115a9f6a3e0b23b80a5b2e4c4][qty]" value="1"
+                    <input type="number" class="input-text qty text" step="1"
+                           min="0" max="30"  value="{{ item.quantity }}"
                            title="Кол-во" size="4" inputmode="numeric">
                 </div>
             </td>
@@ -93,6 +88,12 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
             <td class="product-subtotal" data-title="Итого">
                             <span class="woocommerce-Price-amount amount"><span
                                     class="woocommerce-Price-currencySymbol">₽</span>{{ item.total_price }}</span></td>
+	           <td class="product-remove">
+                <a href="/cart/remove/{{product.slug}}/"
+                   class="remove " aria-label="Удалить эту позицию" hreflang="{{product.slug}}"
+                 >×</a></td>
+
+
         </tr>
 
       {% endwith %}
