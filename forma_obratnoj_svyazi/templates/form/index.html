@@ -2,7 +2,32 @@
 {% load staticfiles %}
 
 {% block content %}
+	<script type="text/javascript">
+		
+	var i=0;
+$( document ).ready(function() {
+    
+$( "a" ).click(function() {   
+    			sendAjaxForm('result_form', 'cart' ,$( this ).attr('hreflang') ,$( this ).attr('href'));
+  alert($( this ).attr('href'));
+    			return false;
 
+});
+function sendAjaxForm(result_form, ajax_form,id,url) {
+    $.ajax({
+        url:     url, //url страницы (action_ajax_form.php)
+        type:     "POST", //метод отправки
+        dataType: "html", //формат данных
+        data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
+        success: function(response) { //Данные отправлены успешно
+        $("."+id).slideUp();
+            },
+    	error: function(response) { // Данные не отправлены
+    		alert("lol");
+        }
+ 	});
+};
+	</script>
 
 <div class="post-text">
     <form action="" method="post">
@@ -42,11 +67,11 @@
 
         {% for item in cart %}
         {% with product=item.product %}
-        <tr class="woocommerce-cart-form__cart-item cart_item">
-<!--            <td class="product-remove">
-                <a href=""
-                   class="remove" aria-label="Удалить эту позицию" data-product_id="2807"
-                   data-product_sku="">×</a></td>-->
+        <tr class="woocommerce-cart-form__cart-item cart_item {{product.slug}} ">
+           <td class="product-remove">
+                <a href="/cart/remove/{{product.slug}}/"
+                   class="remove " aria-label="Удалить эту позицию" hreflang="{{product.slug}}"
+                 >×</a></td>
 
             <td class="product-name" data-title="Товар">
                 <a href="{{ product.get_absolute_url }}">{{ product.name }}</a></td>
