@@ -18,7 +18,7 @@ def CartAdd(request, product_id):
     if request.is_ajax():
         return HttpResponse('OK')
 
-    return redirect('cart:CartDetail')
+    return redirect('/forma_obratnoj_svyazi/')
 
 def CartRemove(request, product_id):
     cart = Cart(request)
@@ -26,7 +26,7 @@ def CartRemove(request, product_id):
     cart.remove(product)
     if request.is_ajax():
         return HttpResponse('OK')
-    return redirect('cart:CartDetail')
+    return redirect('/forma_obratnoj_svyazi/')
 
 
 @require_POST
@@ -43,7 +43,7 @@ def CartAdd_for(request, product_id):
     if request.is_ajax():
         return HttpResponse('OK')
 
-    return redirect('cart:CartDetail')
+    return redirect('/forma_obratnoj_svyazi/')
 
 
 def CartRemove_for(request, product_id):
