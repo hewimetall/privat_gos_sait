@@ -27,7 +27,7 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
         data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
         success: function(response) { //Данные отправлены успешно
         $(id).attr('value',text);
-	confirm("Товар добавлен, \n перейти к оформлению ? ")?window.location = "/forma_obratnoj_svyazi/":1;
+	confirm("Товар добавлен,\nперейти к оформлению ? ")?window.location = "/forma_obratnoj_svyazi/":1;
             },
     	error: function(response) { // Данные не отправлены
     		alert("lol");
