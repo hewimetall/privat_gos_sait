@@ -51,6 +51,9 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
         {% csrf_token %}
     </form>
 <hr>
+{% if cart.count == 0 and not cat %}
+  
+{% else %}  
         <div class="woocommerce">
             <div class="woocommerce-notices-wrapper"></div>
             <form class="woocommerce-cart-form" action="https://www.roscartography.ru/korzina-2/" method="post">
@@ -65,8 +68,7 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
 			<th class="product-quantity">Удалить</th>
                     </tr>
                     </thead>
-                    <tbody>
-
+                    <tbody>  
         {% for item in cart %}
         {% with product=item.product %}
         <tr class="woocommerce-cart-form__cart-item cart_item {{product.slug}} ">
@@ -122,6 +124,9 @@ function sendAjaxForm(result_form, ajax_form,id,url) {
         </tr>
 	
     {% endif %}
+{% endif %}
+
+
                     </tbody>
                 </table>
             </form>
