@@ -43,8 +43,8 @@ def contact(request):
                     phone = cd['phone'],
                     text  = cd['text'],
                     select_list = a 
-                    )
-
+                    )    
+            cart.clear()
             return render(request,'form/post.html',context={'name':request,'usl':a})
     
 

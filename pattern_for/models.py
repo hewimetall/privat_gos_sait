@@ -24,7 +24,7 @@ class pattern_for(models.Model):
     )
     categoy=models.CharField(choices=categor_choise,default=categor_choise[0],max_length=30)
     image_title=models.ImageField(upload_to='pattern',blank=True)
-    #image_priview=models.ImageField(upload_to='pattern',blank=True)
+    image_priview=models.ImageField(upload_to='pattern',blank=True)
     price=models.DecimalField(max_digits=10,decimal_places=2)
     date=models.DateTimeField(auto_now_add=True)
 

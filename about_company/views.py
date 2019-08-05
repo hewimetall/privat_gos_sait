@@ -5,7 +5,7 @@ from .models import about_company,item_block,list_menu
 from django.http import HttpResponse
 from django.views.generic import ListView
 from django.views.generic.detail import SingleObjectMixin
-
+from blog.models import Post
 
 def my_rederect(request):
     return redirect("/news/")
@@ -27,6 +27,7 @@ class My_list_views(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        context['test']=Post.objects.all()
         return context
 
 
